@@ -6,11 +6,11 @@
   position: relative;
   /* background-image: url(../img/gallery/gallery-1.jpg); */
   background-image: linear-gradient(
-      rgba(173, 216, 230, 0.6),
-      rgba(173, 216, 230, 0.6)
+      to bottom,
+      rgba(135, 206, 235, 0.7),
+      rgba(0, 0, 139, 0.7)
     ),
-    /* Linear gradient biru muda dengan transparansi */
-      url(../img/gallery/gallery-1.jpg);
+    url(../img/gallery/gallery-1.jpg);
   background-size: cover;
 }
 

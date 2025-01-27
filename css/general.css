@@ -23,8 +23,9 @@ body {
 
 /*GENERAL REUSABLE COMPONENTS*/
 
-.heading-primary {
-  font-weight: 700;
+.heading-primary,
+.heading-secondary {
+  font-weight: 600;
   color: #333;
   letter-spacing: -0.5px;
 }
