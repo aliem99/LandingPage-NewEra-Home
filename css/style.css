@@ -144,3 +144,38 @@
   font-weight: 100;
   letter-spacing: 1.5;
 }
+
+/* Featured in section */
+.heading-explorer {
+  display: flex;
+  justify-content: space-between;
+}
+
+.section-explorer {
+  padding: 20.3rem 0;
+}
+
+.explorer-description {
+  font-size: 1.8rem;
+  line-height: 1.2;
+}
+
+.explorer-icon {
+  display: flex;
+  gap: 1.8rem;
+}
+.explorer-icon-left,
+.explorer-icon-right {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 8rem;
+  height: 8rem;
+  border: 2px solid black;
+  border-radius: 50%;
+  background-color: #fff;
+}
+
+.explorer-icon i {
+  font-size: 4.2rem;
+}
