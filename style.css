@@ -2,6 +2,7 @@
   --color-primary: #32a7e2;
   --color-blue-dark-1: #0e1f39;
   --color-blue-dark-2: #040c22;
+  --color-gray: #c4c4c4;
 }
 
 * {
@@ -234,7 +235,7 @@ li {
 .explore-listing-text h2 {
   color: var(--color-primary);
   font-size: 4.8rem;
-  font-weight: 300;
+  font-weight: 500;
 }
 
 .explore-listing-text p {
@@ -367,18 +368,232 @@ li {
   margin-bottom: 2rem;
 }
 
+/* our services */
+
 .our-services {
   margin-top: 20rem;
 }
 
-.our-services h2 {
+.our-services-header {
+  margin-bottom: 8rem;
+}
+
+.our-services-header h2 {
   font-size: 4.8rem;
   color: var(--color-primary);
-  font-weight: 300;
+  font-weight: 500;
   text-align: center;
 }
 
-.our-services p {
-  font-size: 1.5rem;
+.our-services-header p {
+  font-size: 1.6rem;
   text-align: center;
+}
+
+.our-services-content {
+  display: flex;
+  justify-content: space-between;
+}
+
+.services {
+  width: 30rem;
+}
+
+.services p {
+  font-size: 1.6rem;
+  line-height: 1.8;
+}
+
+.service {
+  display: flex;
+  align-items: center;
+  gap: 1.8rem;
+  margin-bottom: 0.8rem;
+}
+
+.service img {
+  width: 8rem;
+  height: 8rem;
+}
+
+.service h3 {
+  font-size: 3rem;
+  font-weight: 300;
+}
+
+/* client reviews */
+.client-reviews {
+  margin-top: 13rem;
+  /* padding: 0 6rem; */
+}
+
+.client-reviews p {
+  font-size: 2rem;
+}
+
+.header-client-reviews {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 5rem;
+}
+
+.header-review h2 {
+  color: var(--color-primary);
+  font-size: 4.8rem;
+  font-weight: 500;
+}
+
+.header-review p {
+  font-size: 1.8rem;
+}
+
+.client-review-content {
+  display: flex;
+  justify-content: space-between;
+}
+
+.client-testimonial {
+  width: 45%;
+}
+
+.review {
+  display: flex;
+  align-items: center;
+  gap: 2rem;
+  margin-bottom: 3rem;
+}
+
+.review img {
+  display: block;
+  border-radius: 50%;
+  width: 9.8rem;
+  height: 9.8rem;
+  object-fit: cover;
+}
+
+.review h5 {
+  font-size: 2rem;
+  font-weight: 300;
+  color: var(--color-primary);
+}
+
+.review p {
+  font-size: 1.6rem;
+}
+
+.vertical-line {
+  width: 2px;
+  height: 30rem;
+  background-color: black;
+}
+
+/* subscribe */
+.subscribe {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-top: 20rem;
+  background-color: var(--color-gray);
+  height: 60vh;
+}
+
+.subscribe-content {
+  width: 80%;
+  margin: 0 auto;
+  margin-bottom: 5rem;
+}
+
+.subscribe-content h1 {
+  color: white;
+  font-size: 4.8rem;
+  font-weight: 500;
+  text-align: center;
+  margin-bottom: 1.6rem;
+}
+
+.subscribe-content p {
+  color: white;
+  text-align: center;
+  font-size: 1.6rem;
+  font-weight: 300;
+}
+
+.form-subscribe {
+  display: flex;
+  justify-content: center;
+}
+
+.form-group {
+  display: flex;
+  position: relative;
+  width: 100%;
+  overflow: hidden;
+}
+
+.form-group input {
+  width: 100%;
+  padding: 2rem;
+  font-size: 1.6rem;
+  border: 2px solid #ccc;
+  overflow: hidden;
+  outline: none;
+}
+
+.form-group button {
+  position: absolute;
+  right: 1.5rem;
+  top: 50%;
+  transform: translateY(-50%);
+  padding: 1.2rem 4rem;
+  font-size: 1.6rem;
+  background-color: #007bff;
+  color: white;
+  border: none;
+  cursor: pointer;
+  overflow: hidden;
+}
+
+/* footer */
+.footer-content {
+  display: flex;
+  justify-content: space-between;
+  align-items: baseline;
+  margin-top: 15rem;
+}
+
+.NewEra-Home {
+  width: 25%;
+}
+
+.NewEra-Home h2 {
+  font-size: 3.8rem;
+  font-weight: 500;
+  margin-bottom: 1rem;
+}
+
+.NewEra-Home p {
+  font-size: 1.2rem;
+  font-weight: 300;
+  margin-bottom: 1rem;
+}
+
+.NewEra-Home ul {
+  display: flex;
+  gap: 3.8rem;
+  margin: 2rem 0;
+}
+
+.company h4,
+.support h4,
+.more h4 {
+  font-size: 2.4rem;
+  font-weight: 500;
+}
+
+.company li,
+.support li,
+.more li {
+  font-size: 1.4rem;
+  margin: 1.8rem 0;
 }

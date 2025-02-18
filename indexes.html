@@ -208,10 +208,12 @@
     </div>
     <div class="container">
       <section class="our-services">
-        <h2>Our services</h2>
-        <p>
-          Discover the perfect property that matches your lifestyle and budget today!
-        </p>
+        <div class="our-services-header">
+          <h2>Our services</h2>
+          <p>
+            Discover the perfect property that matches your lifestyle and budget today!
+          </p>
+        </div>
         <div class="our-services-content">
           <div class="services">
             <div class="service">
@@ -249,17 +251,19 @@
           <div class="header-review">
             <h2>Client Reviews</h2>
             <p>
-              Hear from our happy clients about their experiences
+              Hear from our happy clients about their<br>experiences
             </p>
           </div>
           <img src="/img/icon/bactik.svg" alt="">
         </div>
         <div class="client-review-content">
-          <div class="client-reviews">
+          <div class="client-testimonial">
             <div class="review">
               <img src="/img/customer/customer-6.jpg" alt="customer">
-              <h5>James O'Connor</h5>
-              <p>San Francisco, CA</p>
+              <div class="review-customer">
+                <h5>James O'Connor</h5>
+                <p>San Francisco, CA</p>
+              </div>
             </div>
             <p>
               "Working with NewEra Home was a dream! We found our perfect home in just a few weeks, and the process was
@@ -267,11 +271,14 @@
               couldn't be happier with our new home!"
             </p>
           </div>
-          <div class="client-reviews">
+          <div class="vertical-line"></div>
+          <div class="client-testimonial">
             <div class="review">
               <img src="/img/customer/customer-7.jpg" alt="customer">
-              <h5>Sarah L.</h5>
-              <p>Miami, FL</p>
+              <div class="review-customer">
+                <h5>Sarah L.</h5>
+                <p>Miami, FL</p>
+              </div>
             </div>
             <p>
               As a first-time homebuyer, I was nervous about the entire process, but NewEra Home made it so easy.
@@ -284,18 +291,24 @@
     </div>
     <section class="subscribe">
       <div class="container">
-        <h1>Subscribe for Exclusive Offers & Updates</h1>
-        <p>
-          Stay ahead with the latest property deals and news tailored for you
-        </p>
-        <form>
-          <input type="email" id="email" placeholder="Enter your email address here...">
-          <button type="submit">Join Now</button>
+        <div class="subscribe-content">
+          <h1>Subscribe for Exclusive Offers & Updates</h1>
+          <p>
+            Stay ahead with the latest property deals and news tailored for you
+          </p>
+        </div>
+        <form class="form-subscribe">
+          <div class="form-group">
+            <input type="email" id="email" placeholder="Enter your email address here...">
+            <button type="submit">Join Now</button>
+          </div>
         </form>
       </div>
     </section>
-    <footer>
-      <div class="container">
+  </main>
+  <footer>
+    <div class="container">
+      <div class="footer-content">
         <div class="NewEra-Home">
           <h2>NewEra Home</h2>
           <p>
@@ -366,8 +379,8 @@
           </ul>
         </div>
       </div>
-    </footer>
-  </main>
+    </div>
+  </footer>
 </body>
 
 </html>
