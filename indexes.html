@@ -4,14 +4,17 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="style.css">
+
   <link rel="preconnect" href="https://fonts.googleapis.com">
+
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+
   <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;500;700&display=swap" rel="stylesheet">
+
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css"
     integrity="sha512-Evv84Mr4kqVGRNSgIGL/F/aIDqQb7xQ2vcrdIwxfjThSH8CSR7PBEakCr51Ck+w+/U6swU2Im1vVX0SVk9ABhg=="
     crossorigin="anonymous" referrerpolicy="no-referrer" />
-
-  <link rel="stylesheet" href="/style.css">
   <title>NewEra Home</title>
 </head>
 
@@ -19,62 +22,75 @@
   <header class="header">
     <div class="container">
       <nav class="navbar">
-        <a href="#">
-          <img src="/img/logo/Newera-home.png" alt="NewEra-home logo" class="logo">
-        </a>
-        <ul class="nav-list">
-          <li class="nav-item">
-            <a href="#" class="nav-link">Home <span><img src="/img/icon/icon-1.svg" alt=""></span></a>
+        <div class="logo">
+          <img src="/img/logo/Newera-home.png" alt="NewEra Home">
+        </div>
+        <ul class="navbar-list">
+          <li class="navbar-item">
+            <a href="#">Home</a>
+            <i class="fa-solid fa-chevron-down"></i>
           </li>
-          <li class="nav-item">
-            <a href="#" class="nav-link">Properties <span><img src="/img/icon/icon-1.svg" alt=""></span></a>
+          <li class="navbar-item">
+            <a href="#">Properties</a>
+            <i class="fa-solid fa-chevron-down"></i>
           </li>
-          <li class="nav-item">
-            <a href="#" class="nav-link">About Us <span><img src="/img/icon/icon-1.svg" alt=""></span></a>
+          <li class="navbar-item">
+            <a href="#">About Us</a>
+            <i class="fa-solid fa-chevron-down"></i>
           </li>
-          <li class="nav-item">
-            <a href="#" class="nav-link">Blog <span><img src="/img/icon/icon-1.svg" alt=""></span></a>
+          <li class="navbar-item">
+            <a href="#">Blog</a>
+            <i class="fa-solid fa-chevron-down"></i>
           </li>
-          <li class="nav-item">
-            <a href="#" class="nav-link">Contact Us <span><img src="/img/icon/icon-1.svg" alt=""></span></a>
+          <li class="navbar-item">
+            <a href="#">Contact US</a>
+            <i class="fa-solid fa-chevron-down"></i>
           </li>
         </ul>
-        <a href="#" class="btn btn-blue">
-          Get Started
-        </a>
+        <button class="btn">
+          <a href="#">Get Started</a>
+        </button>
       </nav>
-      <div class="hero-section">
-        <div class="hero-text-box">
-          <h1 class="hero-heading">
-            Find Your Perfect Home Today<br>
-            with Newera Home
+      <div class="header-hero">
+        <div class="header-content">
+          <h1 class="header-title">
+            Find Your Perfect Home with Noble Homes
           </h1>
-          <p class="hero-description">
-            Searching for the ideal place to call home? We offer an array of beautifully<br> designed homes in prime
-            locations,
-            all at price that fit your budget
+          <p class="header-description">
+            Find your ideal property with unbeatable service! Whether you're buying or renting, we make your real
+            estate experience smooth, efficient, and hassle-free.
           </p>
-          <div class="btn-container">
-            <a href="#" class="btn-hero btn-dark">Browse Properties</a>
-            <a href="#" class="btn-hero btn-clear">Get in Touch</a>
-          </div>
+          <button class="btn-content__1">
+            <a href="#">Browse Properties</a>
+          </button>
+          <button class="btn-content__2">
+            <a href="#"> Get in Touch </a>
+          </button>
         </div>
-        <div class="hero-customer">
-          <div class="hero-imgs">
-            <img src="/img/customer/customer-1.jpg" alt="Customer Image">
-            <img src="/img/customer/customer-2.jpg" alt="Customer Image">
-            <img src="/img/customer/customer-3.jpg" alt="Customer Image">
-            <img src="/img/customer/customer-4.jpg" alt="Customer Image">
-            <img src="/img/customer/customer-5.jpg" alt="Customer Image">
+        <div class="header-customer">
+          <div class="customer-img">
+            <img src="/img/customer/customer-1.jpg" alt="customer photo" class="customer__photo">
+            <img src="/img/customer/customer-2.jpg" alt="customer photo" class="customer__photo">
+            <img src="/img/customer/customer-3.jpg" alt="customer photo" class="customer__photo">
+            <img src="/img/customer/customer-4.jpg" alt="customer photo" class="customer__photo">
+            <img src="/img/customer/customer-5.jpg" alt="customer photo" class="customer__photo">
           </div>
-          <div class="hero-content">
-            <div class="hero-review">
-              <h3>58K+</h3>
-              <p>Regular Customer</p>
+          <div class="customer-content">
+            <div class="customer__amount">
+              <div class="customer__total">
+                65k+
+              </div>
+              <p class="customer__description">
+                Regular Costumer
+              </p>
             </div>
-            <div class="hero-review">
-              <h3>126K+</h3>
-              <p>Project Successful</p>
+            <div class="project__amount">
+              <div class="project__total">
+                158k+
+              </div>
+              <p class="project__description">
+                Project Successful
+              </p>
             </div>
           </div>
         </div>
@@ -83,162 +99,199 @@
   </header>
   <main>
     <div class="container">
-      <section class="explore-listing">
-        <div class="explore-listing-header">
-          <div class="explore-listing-text">
-            <h2>Explore Listing</h2>
-            <p>
-              We offer services tailored to your real<br> estate needs
+      <section class="explore-listings">
+        <div class="listing-header">
+          <div class="listing-text">
+            <h2 class="listing__title">Explore Listings</h2>
+            <p class="listing__description">
+              We present property services specifically designed to meet your every need
             </p>
           </div>
-          <div class="explore-listing-icon">
-            <a class="explore-icon-left">
-              <i class="fa-solid fa-arrow-left"></i>
-            </a>
-            <a class="explore-icon-right">
-              <i class="fa-solid fa-arrow-right"></i>
-            </a>
+          <div class="listing-btns">
+            <button class="listing-btn__left">
+              <i class="fa-light fa-arrow-left"></i>
+            </button>
+            <button class="listing-btn__right">
+              <i class="fa-light fa-arrow-right"></i>
+            </button>
           </div>
         </div>
-        <div class="explore-content">
-          <div class="explore-listing-content">
-            <img src="/img/gallery/gallery-4.jpg" alt="large white house with swimingpool" class="listing-img">
-            <div class="header-listing">
-              <h4>Modern White Haven</h4>
-              <p>$3,500,000</p>
+        <div class="listing-contents">
+          <div class="listing-gallery">
+            <img src="/img/gallery/gallery-3.jpg" alt="Modern Family Home" class="gallery__img">
+            <div class="gallery-header">
+              <h3 class="gallery__title">
+                Modern Family Home
+              </h3>
+              <p class="gallery__price">
+                $3,500,000
+              </p>
             </div>
             <div class="listing-icons">
-              <div class="listing-icon">
-                <img src="/img/icon/bedrooms.svg" alt="bedrooms">
-                <p>4 bedrooms</p>
+              <div class="list-icon">
+                <img src="/img/icon/bedrooms.svg" alt="bedrooms" class="gallery_icon">
+                <p class="gallery_icon-description">
+                  5 bedrooms
+                </p>
               </div>
-              <div class="listing-icon">
-                <img src="/img/icon/bathrooms.svg" alt="bathrooms">
-                <p>2 bathrooms</p>
+              <div class="list-icon">
+                <img src="/img/icon/bathrooms.svg" alt="bathrooms" class="gallery_icon">
+                <p class="gallery_icon-description">
+                  2 bathrooms
+                </p>
               </div>
-              <div class="listing-icon">
-                <img src="/img/icon/area.svg" alt="area">
-                <p>500 m²</p>
+              <div class="list-icon">
+                <img src="/img/icon/area.svg" alt="area" class="gallery_icon">
+                <p class="gallery_icon-description">
+                  500 m²
+                </p>
               </div>
             </div>
-            <p>
-              Modern White Haven is a sleek, minimalist home with a striking all-white exterior and spacious open-plan
-              design. It features a serene swimming pool, offering a perfect blend of modern luxury and tranquility.
-            </p>
-            <a href="#" class="btn btn-blue">View more</a>
+            <div class="gallery-description">
+              <p class="gallery-description__text">
+                A charming 5-bedroom home perfect for families, featuring a large backyard.
+              </p>
+            </div>
+            <button class="gallery-btn">View More</button>
           </div>
-          <div class="explore-listing-content">
-            <img src="/img/gallery/gallery-4.jpg" alt="large white house with swimingpool" class="listing-img">
-            <div class="header-listing">
-              <h4>Modern White Haven</h4>
-              <p>$3,500,000</p>
+          <div class="listing-gallery">
+            <img src="/img/gallery/gallery-3.jpg" alt="Modern Family Home" class="gallery__img">
+            <div class="gallery-header">
+              <h3 class="gallery__title">
+                Modern Family Home
+              </h3>
+              <p class="gallery__price">
+                $3,500,000
+              </p>
             </div>
             <div class="listing-icons">
-              <div class="listing-icon">
-                <img src="/img/icon/bedrooms.svg" alt="bedrooms">
-                <p>4 bedrooms</p>
+              <div class="list-icon">
+                <img src="/img/icon/bedrooms.svg" alt="bedrooms" class="gallery_icon">
+                <p class="gallery_icon-description">
+                  5 bedrooms
+                </p>
               </div>
-              <div class="listing-icon">
-                <img src="/img/icon/bathrooms.svg" alt="bathrooms">
-                <p>2 bathrooms</p>
+              <div class="list-icon">
+                <img src="/img/icon/bathrooms.svg" alt="bathrooms" class="gallery_icon">
+                <p class="gallery_icon-description">
+                  2 bathrooms
+                </p>
               </div>
-              <div class="listing-icon">
-                <img src="/img/icon/area.svg" alt="area">
-                <p>500 m²</p>
+              <div class="list-icon">
+                <img src="/img/icon/area.svg" alt="area" class="gallery_icon">
+                <p class="gallery_icon-description">
+                  500 m²
+                </p>
               </div>
             </div>
-            <p>
-              Modern White Haven is a sleek, minimalist home with a striking all-white exterior and spacious open-plan
-              design. It features a serene swimming pool, offering a perfect blend of modern luxury and tranquility.
-            </p>
-            <a href="#" class="btn btn-blue">View more</a>
+            <div class="gallery-description">
+              <p class="gallery-description__text">
+                A charming 5-bedroom home perfect for families, featuring a large backyard.
+              </p>
+            </div>
+            <button class="gallery-btn">View More</button>
           </div>
-          <div class="explore-listing-content">
-            <img src="/img/gallery/gallery-4.jpg" alt="large white house with swimingpool" class="listing-img">
-            <div class="header-listing">
-              <h4>Modern White Haven</h4>
-              <p>$3,500,000</p>
+          <div class="listing-gallery">
+            <img src="/img/gallery/gallery-3.jpg" alt="Modern Family Home" class="gallery__img">
+            <div class="gallery-header">
+              <h3 class="gallery__title">
+                Modern Family Home
+              </h3>
+              <p class="gallery__price">
+                $3,500,000
+              </p>
             </div>
             <div class="listing-icons">
-              <div class="listing-icon">
-                <img src="/img/icon/bedrooms.svg" alt="bedrooms">
-                <p>4 bedrooms</p>
+              <div class="list-icon">
+                <img src="/img/icon/bedrooms.svg" alt="bedrooms" class="gallery_icon">
+                <p class="gallery_icon-description">
+                  5 bedrooms
+                </p>
               </div>
-              <div class="listing-icon">
-                <img src="/img/icon/bathrooms.svg" alt="bathrooms">
-                <p>2 bathrooms</p>
+              <div class="list-icon">
+                <img src="/img/icon/bathrooms.svg" alt="bathrooms" class="gallery_icon">
+                <p class="gallery_icon-description">
+                  2 bathrooms
+                </p>
               </div>
-              <div class="listing-icon">
-                <img src="/img/icon/area.svg" alt="area">
-                <p>500 m²</p>
+              <div class="list-icon">
+                <img src="/img/icon/area.svg" alt="area" class="gallery_icon">
+                <p class="gallery_icon-description">
+                  500 m²
+                </p>
               </div>
             </div>
-            <p>
-              Modern White Haven is a sleek, minimalist home with a striking all-white exterior and spacious open-plan
-              design. It features a serene swimming pool, offering a perfect blend of modern luxury and tranquility.
-            </p>
-            <a href="#" class="btn btn-blue">View more</a>
+            <div class="gallery-description">
+              <p class="gallery-description__text">
+                A charming 5-bedroom home perfect for families, featuring a large backyard.
+              </p>
+            </div>
+            <button class="gallery-btn">View More</button>
           </div>
         </div>
       </section>
     </div>
     <div class="container">
       <section class="who-we-are">
-        <img src="/img/gallery/gallery-5.jpg" alt="green house nature">
-
-        <div class="who-we-are-content">
-          <h2>Who We Are</h2>
-          <p>
-            We are dedicated to helping you find your dream home with trust, expertise, and unwavering commitment.
+        <div class="weare-img__box">
+          <img src="/img/gallery/gallery-3.jpg" alt="Who We Are image" class="weare-img">
+        </div>
+        <div class="weare-text__box">
+          <h2 class="weare-title">
+            Who We Are
+          </h2>
+          <p class="weare-description">
+            We’re committed to helping you find the perfect home with trust and expertise.
           </p>
-          <br>
-          <p>
-            At NewEra Home, we’re more than just real estate agents – we’re your trusted partner in finding the
-            perfect home. With years of experience in the industry, our team is committed to providing a personalized,
-            seamless experience for every client.
-
-            We believe that homeownership is a significant milestone, and our goal is to help you make the best
-            decisions, whether you’re buying, selling, or renting. We’ll guide you through every step of the process,
-            offering expert advice and local insights to ensure your real estate journey is smooth, stress-free, and
-            enjoyable.
+          <p class="weare-description">
+            At [Company Name], we are more than just a real estate agency – we are your trusted partner in finding the
+            perfect home. With years of experience in the industry, our team is dedicated to providing a personalized
+            and seamless experience for every client.
+            We believe in the power of homeownership and aim to help you make informed decisions whether you’re buying,
+            selling, or renting. Our goal is to guide you through every step of the process, offering expert advice and
+            local insights to ensure your real estate journey is smooth and stress-free.
           </p>
-          <a href="#" class="btn btn-blue">Read More</a>
+          <div class="weare-btn_box">
+            <button class="weare-btn">Read More</button>
+          </div>
         </div>
       </section>
     </div>
     <div class="container">
       <section class="our-services">
-        <div class="our-services-header">
-          <h2>Our services</h2>
-          <p>
-            Discover the perfect property that matches your lifestyle and budget today!
+        <div class="services-header">
+          <h2 class="services-title">
+            Our Services
+          </h2>
+          <p class="services-description">
+            Browse properties that fit your style and budget
           </p>
         </div>
-        <div class="our-services-content">
-          <div class="services">
-            <div class="service">
-              <img src="/img/icon/buying.svg" alt="buying">
-              <h3>Buying</h3>
+        <div class="services-content">
+          <div class="services-content__item">
+            <div class="service-icon__box">
+              <img src="/img/icon/buying.svg" alt="Buying" class="service-icon">
+              <span class="service-icon__text">Buying</span>
             </div>
-            <p>
+            <p class="service-content__description">
               Find your dream home with expert guidance.
             </p>
           </div>
-          <div class="services">
-            <div class="service">
-              <img src="/img/icon/selling.svg" alt="Selling">
-              <h3>Selling</h3>
+          <div class="services-content__item">
+            <div class="service-icon__box">
+              <img src="/img/icon/selling.svg" alt="Selling" class="service-icon">
+              <span class="service-icon__text">Selling</span>
             </div>
-            <p>
+            <p class="service-content__description">
               Get the best value for your property with our marketing expertise.
             </p>
           </div>
-          <div class="services">
-            <div class="service">
-              <img src="/img/icon/renting.svg" alt="Renting">
-              <h3>Renting</h3>
+          <div class="services-content__item">
+            <div class="service-icon__box">
+              <img src="/img/icon/renting.svg" alt="Renting" class="service-icon">
+              <span class="service-icon__text">Renting</span>
             </div>
-            <p>
+            <p class="service-content__description">
               Browse affordable rental properties in prime locations.
             </p>
           </div>
@@ -247,43 +300,49 @@
     </div>
     <div class="container">
       <section class="client-reviews">
-        <div class="header-client-reviews">
-          <div class="header-review">
-            <h2>Client Reviews</h2>
-            <p>
-              Hear from our happy clients about their<br>experiences
+        <div class="review-header">
+          <div class="review-textbox">
+            <h2 class="review-title">Client Reviews</h2>
+            <p class="review-description">
+              Hear from our happy clients about their experiences
             </p>
           </div>
-          <img src="/img/icon/bactik.svg" alt="">
+          <div class="review-box__icon">
+            <img src="/img/icon/bactik.svg" alt="" class="review-icon">
+          </div>
         </div>
-        <div class="client-review-content">
-          <div class="client-testimonial">
-            <div class="review">
-              <img src="/img/customer/customer-6.jpg" alt="customer">
-              <div class="review-customer">
-                <h5>James O'Connor</h5>
-                <p>San Francisco, CA</p>
+        <div class="review-content">
+          <div class="review-content__box">
+            <div class="review-customer">
+              <div class="review-img">
+                <img src="/img/customer/customer-6.jpg" alt="customer" class="revie-person__img">
+              </div>
+              <div class="review-person">
+                <h3 class="personal">Sarah</h3>
+                <p class="address">San Francisco, CA</p>
               </div>
             </div>
-            <p>
-              "Working with NewEra Home was a dream! We found our perfect home in just a few weeks, and the process was
-              smooth from start to finish. The team was professional, responsive, and really listened to our needs. We
-              couldn't be happier with our new home!"
+            <p class="review-person__description">
+              "Working with [Company Name] was a dream! We found our perfect home in just a few weeks, and the process
+              was smooth from start to finish. The team was professional, responsive, and really listened to our needs.
+              We couldn't be happier with our new home!"
             </p>
           </div>
-          <div class="vertical-line"></div>
-          <div class="client-testimonial">
-            <div class="review">
-              <img src="/img/customer/customer-7.jpg" alt="customer">
-              <div class="review-customer">
-                <h5>Sarah L.</h5>
-                <p>Miami, FL</p>
+          <div class="divider"></div>
+          <div class="review-content__box">
+            <div class="review-customer">
+              <div class="review-img">
+                <img src="/img/customer/customer-6.jpg" alt="customer" class="revie-person__img">
+              </div>
+              <div class="review-person">
+                <h3 class="personal">Sarah</h3>
+                <p class="address">San Francisco, CA</p>
               </div>
             </div>
-            <p>
-              As a first-time homebuyer, I was nervous about the entire process, but NewEra Home made it so easy.
-              They guided me through every step and helped me understand all the paperwork. I feel confident and secure
-              in my new home. Highly recommend them!
+            <p class="review-person__description">
+              "Working with [Company Name] was a dream! We found our perfect home in just a few weeks, and the process
+              was smooth from start to finish. The team was professional, responsive, and really listened to our needs.
+              We couldn't be happier with our new home!"
             </p>
           </div>
         </div>
@@ -292,95 +351,104 @@
     <section class="subscribe">
       <div class="container">
         <div class="subscribe-content">
-          <h1>Subscribe for Exclusive Offers & Updates</h1>
-          <p>
+          <h2 class="subscribe-title">
+            Subscribe for Exclusive Offers & Updates
+          </h2>
+          <p class="subscribe-description">
             Stay ahead with the latest property deals and news tailored for you
           </p>
+          <form action="" class="subscribe-form">
+            <input type="text" name="" id="" placeholder="Enter your email address here...">
+            <button class="subscribe-btn">Join Now</button>
+          </form>
         </div>
-        <form class="form-subscribe">
-          <div class="form-group">
-            <input type="email" id="email" placeholder="Enter your email address here...">
-            <button type="submit">Join Now</button>
-          </div>
-        </form>
       </div>
     </section>
   </main>
-  <footer>
+  <footer class="footer">
     <div class="container">
-      <div class="footer-content">
-        <div class="NewEra-Home">
-          <h2>NewEra Home</h2>
-          <p>
+      <div class="main-footer">
+        <div class="newera-home">
+          <h2 class="newera__title">NewEra Home</h2>
+          <p class="newera__description">
             We help you find your perfect home, from modern apartments to luxurious family houses.
           </p>
-          <ul>
+          <ul class="newera-icons">
             <li>
-              <a href="#">
-                <img src="/img/icon/instagram.svg" alt="instagram">
-              </a>
+              <img src="/img/icon/instagram.svg" alt="instagram" class="newera-icon">
             </li>
             <li>
-              <a href="#">
-                <img src="/img/icon/fb.svg" alt="facebook">
-              </a>
+              <img src="/img/icon/fb.svg" alt="facebook" class="newera-icon">
             </li>
             <li>
-              <a href="#">
-                <img src="/img/icon/linked.svg" alt="linkedin">
-              </a>
+              <img src="/img/icon/linked.svg" alt="lin" class="newera-icon">
             </li>
           </ul>
-          <p>© NewEra Home, 2025. All Rights Reserved.</p>
+          <p class="newera-credit">
+            © NewEra Home, 2025. All Rights Reserved.
+          </p>
         </div>
         <div class="company">
-          <h4>Company</h4>
-          <ul>
+          <h3 class="company-title">company</h3>
+          <ul class="company-listing">
             <li>
-              <a href="#">About Us</a>
+              <a href="#" class="company-list">About Us</a>
             </li>
             <li>
-              <a href="#">Our Blog</a>
+              <a href="#" class="company-list">Our Blog</a>
             </li>
             <li>
-              <a href="#">Contact Us</a>
+              <a href="#" class="company-list">Contact Us</a>
             </li>
             <li>
-              <a href="#">Careers</a>
+              <a href="#" class="company-list">Careers</a>
             </li>
           </ul>
         </div>
         <div class="support">
-          <h4>Support</h4>
-          <ul>
+          <h3 class="support-title">Support</h3>
+          <ul class="support-listing">
             <li>
-              <a href="#">Help Center</a>
+              <a href="#" class="support-list">
+                Help Center
+              </a>
             </li>
             <li>
-              <a href="#">FAQs</a>
+              <a href="#" class="support-list">
+                FAQs
+              </a>
             </li>
             <li>
-              <a href="#">Privacy Policy</a>
+              <a href="#" class="support-list">
+                Privacy Policy
+              </a>
             </li>
           </ul>
         </div>
         <div class="more">
-          <h4>More</h4>
-          <ul>
+          <h3 class="more-title">More</h3>
+          <ul class="more-listing">
             <li>
-              <a href="#">Join Our Comunnity</a>
+              <a href="#" class="more-list">
+                Join Our Community
+              </a>
             </li>
             <li>
-              <a href="#">Events and News</a>
+              <a href="#" class="more-list">
+                Events & News
+              </a>
             </li>
             <li>
-              <a href="#">Terms and Conditions</a>
+              <a href="#" class="more-list">
+                Terms & Conditions
+              </a>
             </li>
           </ul>
         </div>
       </div>
     </div>
   </footer>
+
 </body>
 
 </html>
