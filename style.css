@@ -47,7 +47,7 @@ p {
 }
 
 .btn {
-  padding: 1.2rem 3rem;
+  padding: 1.5rem 3rem;
   cursor: pointer;
 }
 
@@ -58,11 +58,11 @@ p {
 }
 
 .header {
-  height: 95vh;
+  height: 100vh;
   background-image: linear-gradient(
       to top,
-      rgba(115, 147, 161, 0.7),
-      rgba(57, 57, 244, 0.7)
+      rgba(64, 66, 66, 0.7),
+      rgba(45, 45, 142, 0.7)
     ),
     url(../img/gallery/gallery-1.jpg);
   background-size: cover;
@@ -103,17 +103,19 @@ p {
   color: white;
   margin: 0 0 0 5rem;
   font-size: 2rem;
+  z-index: 10;
 }
 
 /* header hero */
 .header-hero {
   display: flex;
   position: relative;
+  padding: 16rem 0;
 }
 
 .header-content {
   width: 50%;
-  margin: 16rem 0;
+  /* padding: 16rem 0; */
 }
 
 .header-title {
@@ -159,7 +161,7 @@ p {
 
 .header-customer {
   position: absolute;
-  top: 80%;
+  top: 90%;
   right: 0;
 }
 
@@ -194,4 +196,378 @@ p {
   color: white;
   font-size: 1.6rem;
   font-weight: 300;
+}
+
+/* explore Listing */
+.explore-listings {
+  padding: 20rem 0 10rem 0;
+}
+
+.listing-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 3rem;
+}
+
+.listing__title {
+  color: var(--primary-color);
+  font-weight: 500;
+}
+
+.listing__description {
+  font-weight: 300;
+}
+
+.listing-btns {
+  display: flex;
+  justify-content: center;
+  gap: 1.5rem;
+}
+
+.listing-btn__left,
+.listing-btn__right {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.listing-btn__left {
+  background-color: transparent;
+  width: 7rem;
+  height: 7rem;
+  border-radius: 50%;
+  color: black;
+  font-size: 3.5rem;
+}
+
+.listing-btn__right {
+  background-color: var(--primary-color);
+  width: 7rem;
+  height: 7rem;
+  border-radius: 50%;
+  color: white;
+  font-size: 3.5rem;
+  border: 2px solid var(--primary-color);
+}
+
+.listing-contents {
+  display: flex;
+  justify-content: space-between;
+  gap: 3rem;
+}
+
+.gallery-header {
+  display: flex;
+  justify-content: space-between;
+  padding: 1.5rem 0 2rem 0;
+}
+
+.gallery__title {
+  font-weight: 500;
+  width: 21.5rem;
+}
+
+.gallery__price {
+  color: var(--primary-color);
+  font-weight: 500;
+}
+
+.listing-icons {
+  display: flex;
+  justify-content: space-between;
+}
+
+.list-icon {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 1.5rem;
+}
+
+.gallery_icon {
+  width: 3rem;
+}
+
+.gallery_icon-description {
+  font-weight: 300;
+  font-size: 1.2rem;
+}
+
+.gallery-description {
+  margin: 2rem 0;
+}
+.gallery-description__text {
+  font-size: 1.4rem;
+  font-weight: 300;
+}
+
+.gallery-btn {
+  background-color: var(--primary-color);
+  color: white;
+  font-size: 1.8rem;
+  font-weight: 700;
+  border: none;
+}
+
+/* who we are */
+.who-we-are {
+  display: flex;
+  align-items: center;
+  gap: 6rem;
+  padding: 10rem 0;
+}
+
+.weare-img__box,
+.weare-text__box {
+  flex: 1;
+}
+
+.weare-title {
+  color: var(--primary-color);
+  font-weight: 500;
+}
+
+.weare-description {
+  font-weight: 1.6rem;
+  font-weight: 300;
+  margin-bottom: 3rem;
+}
+
+.weare-btn {
+  background-color: var(--primary-color);
+  color: white;
+  font-size: 1.8rem;
+  font-weight: 700;
+  border: none;
+}
+
+/* our services */
+.our-services {
+  padding: 10rem 0;
+}
+
+.services-header {
+  text-align: center;
+  margin-bottom: 8rem;
+}
+
+.services-title {
+  color: var(--primary-color);
+  font-weight: 500;
+}
+
+.services-description {
+  font-weight: 300;
+  font-size: 1.8rem;
+}
+
+.services-content {
+  display: flex;
+  justify-content: space-between;
+}
+
+.service-icon__box {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 2.4rem;
+  margin-bottom: 2rem;
+}
+
+.service-icon__text {
+  font-size: 3.4rem;
+  font-weight: 300;
+}
+
+.service-icon {
+  width: 9rem;
+  height: 9rem;
+}
+
+.service-content__description {
+  font-weight: 300;
+}
+
+/* client reviews */
+.client-reviews {
+  padding: 10rem 0 20rem 0;
+}
+
+.review-header {
+  display: flex;
+  justify-content: space-between;
+}
+
+.review-textbox {
+  margin-bottom: 6rem;
+}
+
+.review-title {
+  color: var(--primary-color);
+  font-weight: 500;
+}
+
+.review-description {
+  font-weight: 300;
+  font-size: 1.8rem;
+}
+
+.review-content {
+  display: flex;
+  justify-content: space-between;
+  gap: 6rem;
+}
+
+.review-customer {
+  display: flex;
+  align-items: center;
+  gap: 3rem;
+  margin-bottom: 3rem;
+}
+
+.review-person__img {
+  display: block;
+  height: 9.8rem;
+  width: 9.8rem;
+  border-radius: 50%;
+  margin-right: -1.6rem;
+  border: 3px solid #fff;
+  object-fit: cover;
+}
+
+.personal {
+  color: var(--primary-color);
+  font-weight: 500;
+}
+
+.address {
+  font-weight: 300;
+}
+
+.review-person__description {
+  font-size: 2.3rem;
+  font-weight: 300;
+}
+
+.divider {
+  height: 50vh;
+  border: 1px solid black;
+}
+
+/* subscribe */
+.subscribe {
+  padding: 10rem 0;
+  height: 100vh;
+  background-image: linear-gradient(
+      to top,
+      rgba(49, 55, 58, 0.7),
+      rgba(37, 37, 61, 0.7)
+    ),
+    url(../img/gallery/gallery-2.jpg);
+  background-size: cover;
+}
+
+.subscribe-content {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.subscribe-header {
+  width: 70%;
+  padding: 15rem 0 6rem 0;
+}
+
+.subscribe-title {
+  color: white;
+  text-align: center;
+  font-weight: 500;
+  margin-bottom: 1.6rem;
+}
+
+.subscribe-description {
+  color: white;
+  text-align: center;
+  font-size: 1.8rem;
+  font-weight: 300;
+}
+
+.subscribe-form {
+  position: relative;
+  width: 70%;
+}
+
+.subscribe-input {
+  width: 100%;
+  border: 1px solid #ccc;
+  padding: 3rem 10rem 3rem 2.5rem;
+  box-sizing: border-box;
+  outline: none;
+  font-size: 2rem;
+  letter-spacing: 0.5rem;
+}
+
+.subscribe-btn {
+  position: absolute;
+  right: 1.5rem;
+  top: 1rem;
+  bottom: 1rem;
+  border: 0;
+  background: var(--secondary-color);
+  color: #fff;
+  outline: none;
+  padding: 2rem 7rem;
+  font-size: 2rem;
+  font-weight: 700;
+}
+
+/* footer */
+.footer {
+  padding: 20rem 0 10rem 0;
+}
+
+.main-footer {
+  display: flex;
+  justify-content: space-between;
+}
+
+.newera-home {
+  width: 30%;
+}
+
+.newera__title {
+  font-weight: 500;
+  margin-bottom: 2rem;
+}
+
+.newera__description {
+  font-weight: 300;
+  margin-bottom: 3rem;
+}
+
+.newera-icons {
+  display: flex;
+  gap: 3rem;
+  margin-bottom: 2rem;
+}
+
+.newera-credit {
+  font-weight: 300;
+}
+
+.company-title,
+.support-title,
+.more-title {
+  font-weight: 500;
+  margin-bottom: 2rem;
+}
+
+.company-list,
+.support-list,
+.more-list {
+  font-size: 1.8rem;
+  font-weight: 300;
+  padding: 1.5rem 0rem;
 }
